@@ -1,7 +1,7 @@
 from app import app
 from flask import render_template
 from app import db
-from app.models import Measurement
+from app.measurements.models import Measurement
 
 lista = [
     {
