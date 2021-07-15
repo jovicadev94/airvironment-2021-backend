@@ -83,6 +83,8 @@ def patch(id):
             "temperature": measurement.temperature,
             "pollution": measurement.pollution,
             "humidity": measurement.humidity}
+    db.session.add(measurement)
+    db.session.commit()
     return json.dumps(data)
 
 
