@@ -4,7 +4,7 @@ import sys
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 from app import db
 
-from app.models import Measurement
+from app.measurements.models import Measurement
 
 def test():
     mm = Measurement(pollution=8.0, humidity=9.0, temperature=9.0)
